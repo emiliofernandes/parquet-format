@@ -25,6 +25,7 @@ jobs:
   include:
     - name: Linux AARCH64
       arch: arm64
+      jdk: openjdk11
       before_script: sudo apt-get install -qq maven
 
 install:
