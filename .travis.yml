@@ -25,11 +25,7 @@ jobs:
   include:
     - name: Linux AARCH64
       arch: arm64
-      apt:
-        addons:
-          packages:
-            - openjdk-11-jdk
-            - maven
+      before_script: sudo apt-get install -qq openjdk-11-jdk maven
 
 install:
   - sudo apt-get update -qq
