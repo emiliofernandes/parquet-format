@@ -17,15 +17,15 @@
 
 language: java
 
-jdk:
-  - openjdk8
-  - openjdk11
+#jdk:
+#  - openjdk8
+#  - openjdk11
 
 jobs:
   include:
     - name: Linux AARCH64
       arch: arm64
-      before_script: sudo apt-get install -qq openjdk-11-jdk maven
+      before_script: sudo apt-get install -qq maven
 
 install:
   - sudo apt-get update -qq
